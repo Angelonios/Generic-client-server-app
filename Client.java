@@ -10,8 +10,11 @@ public class Client {
 
     private Socket socket;
 
-    public Client() {
+    private BufferedReader lineReader;
 
+    private PrintWriter replier;
+
+    public Client() {
         connectToServer("localhost", 8888);
     }
 
